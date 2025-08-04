@@ -24,8 +24,26 @@ def run():
     The system should prevent the user from withdrawing funds that would leave them with a negative balance, or
     from buying more shares than they can afford, or selling shares that they don't have.
     The system has access to a function get_share_price(symbol) which returns the current price of a share, and includes a test implementation that returns fixed prices for AAPL, TSLA, GOOGL.
-    """
-    
+    The frontend interface must have 3 tabs for a trading simulation platform.
+
+    Tabs:
+    1. Account Management:
+    - Create a user account
+   - Deposit funds
+   - Withdraw funds
+
+    2. Trading:
+   - Buy and sell shares by symbol and quantity
+   - Prevent overbuying or overselling
+   - Call get_share_price(symbol) to fetch current share prices
+
+    3. Reports:
+   - Display current holdings
+   - Calculate and show portfolio value
+   - Show profit or loss from the initial deposit
+   - List all transactions made
+   """
+
     module_name = "accounts.py"
     class_name = "Account"
 
