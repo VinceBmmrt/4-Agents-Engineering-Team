@@ -55,5 +55,5 @@ All generated files (backend module, frontend UI, tests) will be saved in the ou
 
 To launch the Gradio frontend demo:
 
-cd output
+cd .\output\
 uv run app.py
