@@ -1,54 +1,59 @@
-# EngineeringTeam Crew
+# 4-Agents-Engineering-Team
 
-Welcome to the EngineeringTeam Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+## Description / Description
 
-## Installation
+**FR :**  
+4-Agents-Engineering-Team est une équipe d’agents IA spécialisée dans le développement logiciel collaboratif. Chaque agent a un rôle clair : lead technique, développeur backend, développeur frontend et ingénieur QA. Ensemble, ils conçoivent, codent, testent et démontrent un projet Python complet, en suivant des exigences précises. Le système facilite la division du travail, l’automatisation et la qualité du code, pour accélérer le développement tout en restant la rigoureux.  
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Le modèle est entièrement paramétrable : chaque agent peut utiliser un modèle de langage différent, adapté à sa tâche spécifique, ce qui permet une meilleur flexibilité et une optimisation des performances.
 
-First, if you haven't already, install uv:
+**EN :**  
+4-Agents-Engineering-Team is an AI-driven software engineering team where each agent has a defined role: engineering lead, backend developer, frontend developer, and QA engineer. They collaboratively design, implement, test, and demo a complete Python project based on clear requirements. This setup enables task division, automation, and ensures high code quality to speed up development with precision.  
 
-```bash
-pip install uv
-```
+The system is fully configurable: each agent can use a different language model tailored to its specific task, allowing better flexibility and performance optimization.
 
-Next, navigate to your project directory and install the dependencies:
+## Fonctionnalités / Features
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+- **FR :**  
+  - Gestion complète du cycle de développement logiciel en équipe d’agents  
+  - Conception détaillée du module backend par le lead technique  
+  - Implémentation du code backend selon la conception validée  
+  - Création d’une interface frontend simple pour démonstration (Gradio)  
+  - Écriture et exécution de tests unitaires automatisés  
+  - Processus structuré et séquentiel avec gestion des tâches  
+  - Paramétrage indépendant des modèles pour chaque agent  
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+- **EN :**  
+  - Full software development lifecycle managed by a team of AI agents  
+  - Detailed backend module design by the engineering lead  
+  - Backend code implementation following the approved design  
+  - Simple frontend demo interface built with Gradio  
+  - Automated unit testing and validation  
+  - Structured sequential workflow with task management  
+  - Independent model configuration for each agent  
 
-- Modify `src/engineering_team/config/agents.yaml` to define your agents
-- Modify `src/engineering_team/config/tasks.yaml` to define your tasks
-- Modify `src/engineering_team/crew.py` to add your own logic, tools and specific args
-- Modify `src/engineering_team/main.py` to add custom inputs for your agents and tasks
+## Demo
+You can watch a quick demo of the multi-agent engineering team in action here:
+https://drive.google.com/file/d/17ePDdkq0TVcTeYgG-axHndiNdVlBoeM5/view
 
-## Running the Project
+This video showcases how the agents collaborate seamlessly to design, code, test, and build a frontend for the trading simulation platform. It highlights the power of modular AI agents working together under CrewAI orchestration.
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
-```bash
-$ crewai run
-```
+## Prerequisites
 
-This command initializes the engineering_team Crew, assembling the agents and assigning them tasks as defined in your configuration.
+- Configure your `.env` file with the required API keys for the language models. Use the `.env.example` in the project as a reference.  
+- Install the Python dependency manager `uv` and run `uv sync` to install all project dependencies.  
+- Install and start **Docker Desktop**, as agents execute the code they generate inside Docker containers for safe, isolated execution environments.  
+- This project uses **CrewAI** to orchestrate the multi-agent workflow.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Run the Project
 
-## Understanding Your Crew
+- Ensure Docker Desktop is running.  
+- Start the agents team with the command:   crewai run
 
-The engineering_team Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+All generated files (backend module, frontend UI, tests) will be saved in the output directory.
 
-## Support
+To launch the Gradio frontend demo:
 
-For support, questions, or feedback regarding the EngineeringTeam Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+cd output
+uv run app.py
