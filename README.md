@@ -1,15 +1,15 @@
-# 4-Agents-Engineering-Team
+# 4-Agents-Engineering-Team - CrewAI
 
 ## Description / Description
 
 **FR :**  
 4-Agents-Engineering-Team est une équipe d’agents IA spécialisée dans le développement logiciel collaboratif. Chaque agent a un rôle clair : lead technique, développeur backend, développeur frontend et ingénieur QA. Ensemble, ils conçoivent, codent, testent et démontrent un projet Python complet, en suivant des exigences précises. Le système facilite la division du travail, l’automatisation et la qualité du code, pour accélérer le développement tout en restant la rigoureux.  
-
+Ce projet utilise CrewAI.
 Le modèle est entièrement paramétrable : chaque agent peut utiliser un modèle de langage différent, adapté à sa tâche spécifique, ce qui permet une meilleur flexibilité et une optimisation des performances.
 
 **EN :**  
 4-Agents-Engineering-Team is an AI-driven software engineering team where each agent has a defined role: engineering lead, backend developer, frontend developer, and QA engineer. They collaboratively design, implement, test, and demo a complete Python project based on clear requirements. This setup enables task division, automation, and ensures high code quality to speed up development with precision.  
-
+This project uses Crew AI.
 The system is fully configurable: each agent can use a different language model tailored to its specific task, allowing better flexibility and performance optimization.
 
 ## Fonctionnalités / Features
